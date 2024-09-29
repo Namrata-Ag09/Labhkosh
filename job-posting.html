@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/labhkosh2.png" type="image/png">
+    <title>Labhkosh - Job Posting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section class="hero1">
+            <h1>Post a Job</h1>
+            <p>Describe your project and find the right professional for the job.</p>
+        </section>
+
+        <section class="job-form">
+            <h2>Job Details</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="title">Job Title</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select a category</option>
+                        <option value="mechanic">Mechanic</option>
+                        <option value="electrician">Electrician</option>
+                        <option value="carpenter">Carpenter</option>
+                        <option value="plumber">Plumber</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Job Description</label>
+                    <textarea id="description" name="description" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Budget (INR)</label>
+                    <input type="number" id="budget" name="budget" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="deadline">Deadline</label>
+                    <input type="date" id="deadline" name="deadline" required>
+                </div>
+                <button type="submit" class="btn">Post Job</button>
+            </form>
+        </section>
+
+        <section id="listings" class="job-listings">
+            <h2>Current Job Listings</h2>
+            <div class="job-list">
+                <div id="job1" class="job-card">
+                    <h3>Plumbing Repair</h3>
+                    <p>Need a skilled plumber for bathroom renovation.</p>
+                    <span class="location">Lucknow, Uttar Pradesh</span>
+                    <span class="budget">Budget: Rs.1500</span>
+                    <a href="#" class="btn">Apply Now</a>
+                </div>
+                <div id="job2" class="job-card">
+                    <h3>Electrical Wiring</h3>
+                    <p>Seeking experienced electrician for home rewiring project.</p>
+                    <span class="location">Dwarka, Delhi</span>
+                    <span class="budget">Budget: Rs.9000</span>
+                    <a href="#" class="btn">Apply Now</a>
+                </div>
+                <div id="job3" class="job-card">
+                    <h3>Carpentry Work</h3>
+                    <p>Custom cabinetry and shelving installation needed.</p>
+                    <span class="location">Ahemdabad, Gujarat</span>
+                    <span class="budget">Budget: Rs.1800</span>
+                    <a href="#" class="btn">Apply Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
