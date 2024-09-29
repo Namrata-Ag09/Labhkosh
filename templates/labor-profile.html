@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Labhkosh - Service Provider Profile{% endblock %}
+
+{% block content %}
+<section class="hero1">
+    <h1>Create Your Service Provider Profile</h1>
+    <p>Showcase your skills and experience to potential clients.</p>
+</section>
+
+<section class="profile-form">
+    <h2>Profile Information</h2>
+    <form action="{{ url_for('labor_profile') }}" method="post">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="profession">Profession</label>
+            <select id="profession" name="profession" required>
+                <option value="">Select your profession</option>
+                <option value="mechanic">Mechanic</option>
+                <option value="electrician">Electrician</option>
+                <option value="carpenter">Carpenter</option>
+                <option value="plumber">Plumber</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="experience">Years of Experience</label>
+            <input type="number" id="experience" name="experience" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" required>
+        </div>
+        <div class="form-group">
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="bio" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="skills">Skills (comma-separated)</label>
+            <input type="text" id="skills" name="skills" required>
+        </div>
+        <button type="submit" class="btn">Create Profile</button>
+    </form>
+</section>
+
+<section id="browse" class="browse-professionals">
+    <h2>Browse Other Professionals</h2>
+    <div class="professional-list">
+        <div class="professional-card">
+            <h3>Vishesh Singh</h3>
+            <p>Experienced Plumber</p>
+            <p>5 years of experience</p>
+            <a href="#" class="btn">View Profile</a>
+        </div>
+        <div class="professional-card">
+            <h3>Anurag Yadav</h3>
+            <p>Master Electrician</p>
+            <p>6 years of experience</p>
+            <a href="#" class="btn">View Profile</a>
+        </div>
+        <div class="professional-card">
+            <h3>Shivendra Mittal</h3>
+            <p>Skilled Carpenter</p>
+            <p>8 years of experience</p>
+            <a href="#" class="btn">View Profile</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
