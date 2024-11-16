@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labhkosh - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/labhkosh1.jpeg" alt="Logo Image" class="header-image">
+            </a>
+            <button class="nav-toggle">&#9776;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="labor-profile.html">For Service Providers</a></li>
+                <li><a href="job-posting.html">Post a Job/Hire Talent</a></li>
+                <li><a href="job-posting.html#listings">Job Listings</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="images/newimage1.jpg" alt="New Image 1">
+                    <div class="overlay-text">
+                        <h1>Connect with Local Service Providers</h1>
+                        <p>Find skilled mechanics, electricians, carpenters, and plumbers in your area.</p>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="images/newimage2.jpg" alt="New Image 2">
+                    <div class="overlay-text">
+                        <h1>Quality Service at Your Doorstep</h1>
+                        <p>Your reliable professionals for any job.</p>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="images/newimage3.jpeg" alt="New Image 3">
+                    <div class="overlay-text">
+                        <h1>Find the Right Expert</h1>
+                        <p>Choose from a variety of skilled tradespeople.</p>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+        <section id="labor" class="for-labor">
+            <h2>For Service Providers</h2>
+            <div class="card">
+                <h3>Create Your Profile</h3>
+                <p>Showcase your skills and experience to potential clients.</p>
+                <a href="labor-profile.html" class="btn">Create Profile</a>
+            </div>
+            <div class="card">
+                <h3>Find Jobs</h3>
+                <p>Browse and apply for job listings in your area.</p>
+                <a href="job-posting.html#listings" class="btn">View Jobs</a>
+            </div>
+        </section>
+
+        <section id="users" class="for-users">
+            <h2>For Users</h2>
+            <div class="card">
+                <h3>Post a Job</h3>
+                <p>Describe your project and find the right professional for the job.</p>
+                <a href="job-posting.html" class="btn">Post a Job</a>
+            </div>
+            <div class="card">
+                <h3>Browse Professionals</h3>
+                <p>Find skilled service providers in your area.</p>
+                <a href="labor-profile.html#browse" class="btn">Find Professionals</a>
+            </div>
+        </section>
+
+        <section id="featured-jobs" class="featured-jobs">
+            <h2>Featured Job Listings</h2>
+            <div class="job-list">
+                <div class="job-card">
+                    <h3>Plumbing Repair</h3>
+                    <p>Need a skilled plumber for bathroom renovation.</p>
+                    <span class="location">Lucknow, Uttar Pradesh</span>
+                    <a href="job-posting.html#job1" class="btn">View Details</a>
+                </div>
+                <div class="job-card">
+                    <h3>Electrical Wiring</h3>
+                    <p>Seeking experienced electrician for home rewiring project.</p>
+                    <span class="location">Dwarka, Delhi</span>
+                    <a href="job-posting.html#job2" class="btn">View Details</a>
+                </div>
+                <div class="job-card">
+                    <h3>Carpentry Work</h3>
+                    <p>Custom cabinetry and shelving installation needed.</p>
+                    <span class="location">Ahmedabad, Gujarat</span>
+                    <a href="job-posting.html#job3" class="btn">View Details</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Connecting skilled professionals with users in need of services.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="labor-profile.html">For Service Providers</a></li>
+                    <li><a href="job-posting.html">Post a Job/Hire Talent</a></li>
+                    <li><a href="job-posting.html#listings">Job Listings</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@labhkosh.com</p>
+                <p>Phone: +91-7789642456</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Labhkosh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
